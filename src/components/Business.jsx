@@ -40,6 +40,7 @@ const Business = () => {
                     bgColor="bg-blue-gradient"
                     onClick={() => setToggle((prev) => !prev)} 
                 />
+
                 <Button 
                     styles={`mt-10`}
                     name="Propietario"
@@ -49,17 +50,18 @@ const Business = () => {
             </div>
 
             <div className={`${layout.sectionImg} flex-col`}>
-                
-                
+
+            
+
                 {features_inv.map((feature, index) => (
                     <FeatureCard key={features_inv.id} {...feature} index={index} />
                 ))}
 
-
-                {/* <h2> Propietario</h2>
-                {features_prop.map((feature, index) => (
-                    <FeatureCard key={features_inv.id} {...feature} index={index} />
-                ))} */}
+                    {/* { 
+                    {features_prop.map((feature, index) => (
+                        <FeatureCard key={features_prop.id} {...feature} index={index} />
+                    ))} } */}
+                
             </div>
         </section>
     )

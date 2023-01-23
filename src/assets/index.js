@@ -16,11 +16,11 @@ import card4 from "./Card4.png";
 import twitter_icon from "./twitter_icon.svg";
 import link_icon from "./link_icon.svg";
 import insta_icon from "./insta_icon.svg";
-import nft2 from "./nft.svg"
-import instagram from "./instagram.svg"
-import twitter from "./twitter.svg"
-import linkedin from "./linkedin.svg"
-
+import nft2 from "./nft.svg";
+import instagram from "./instagram.svg";
+import twitter from "./twitter.svg";
+import linkedin from "./linkedin.svg";
+import star_yellow from "./Star_yellow.svg";
 
 export {
     close,
@@ -43,5 +43,7 @@ export {
     logo_white,
     instagram,
     twitter,
-    linkedin
+    linkedin,
+    star_yellow,
+    
 };

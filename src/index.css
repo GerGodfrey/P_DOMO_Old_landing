@@ -59,8 +59,6 @@
   );
 }
 
-
-
 .bg-black-gradient-2 {
   background: linear-gradient(
     168deg,
@@ -163,9 +161,6 @@
 }
 
 
-
-
-
 /* NO OCUPADOS  */
 
 :root {
@@ -181,12 +176,6 @@
 * {
   scroll-behavior: smooth;
 }
-
-
-
-
-
-
 
 
 

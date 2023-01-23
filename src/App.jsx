@@ -2,9 +2,6 @@
 import styles from './style';
 import { Navbar, Hero, Stats, Business, Team, Billing, CTA, Footer } from "./components";
 
-
-// {`${}`}
-
 const App = () =>(
   <div className="bg-black w-full overflow-hidden">
     

@@ -1,6 +1,6 @@
 import { send, shield, star,
     card1, card2, card3, card4,
-    instagram, twitter, linkedin } from "../assets";
+    instagram, twitter, linkedin,star_yellow } from "../assets";
 
 
 export const navLinks = [
@@ -67,16 +67,17 @@ export const features_inv = [
     },
 ];
 
+
 export const features_prop = [
     {
       id: "feature-1",
-      icon: star,
+      icon: star_yellow,
       title: "DIGITALIZA EL INMUEBLE ",
       content:
         "Sube la información solicitada para que podamos estudiarla, generar una valuación de tu inmueble y proporcionarte información del mercado. ",
     },{
       id: "feature-2",
-      icon: star,
+      icon: star_yellow,
       title: "ESCOGE UN ESQUEMA",
       content:
         "Dinos qué es lo que quieres ¿obtener un préstamo por tu inmueble o prefieres ponerlo a la venta?",
