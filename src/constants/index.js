@@ -129,7 +129,7 @@ export const team = [
     },
     {
         id:"team-2",
-        area:"Legal and Mrkt",
+        area:"Legal and Mktg",
         name:"Javier Hernández",
         t_link:"https://twitter.com/JavierH_R",
         l_link:"https://www.linkedin.com/in/luis-javier-hern%C3%A1ndez-681172125/",
@@ -138,7 +138,7 @@ export const team = [
     },
     {
         id:"team-3",
-        area:"Mrkt",
+        area:"Mktg",
         name:"Regina Lugo",
         t_link:"https://twitter.com/reginaboh_",
         l_link:"http://linkedin.com/in/reginalugorom",
