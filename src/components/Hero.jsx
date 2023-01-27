@@ -21,7 +21,7 @@ const Hero = () => (
             <div className="flex flex-row justify-between items-center w-full">
                 <h1 className="flex-1 font-dmSans font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
                     <span className="text-gradient ">
-                        GERRY GERRY <br className='sm:block hidden'/> {" "}
+                        UTILIZA TUS CRIPTOMONEDAS <br className='sm:block hidden'/> {" "}
                     </span>
                     Y ACCEDE AL MERCADO INMOBILIARIO
                 </h1>
