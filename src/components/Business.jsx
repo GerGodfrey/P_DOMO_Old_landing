@@ -20,7 +20,9 @@ const FeatureCard = ({ icon, title, content, index }) => (
 );
 
 const Business = () => {
-    const [toggle, setToggle] = useState(false);
+    const [view, setView] = useState(false);
+    const viewInvesment = () => setView(true);
+    const viewProperty = () => setView(false);
     
     return (
         <section id="funciones" className={layout.section}>
@@ -32,35 +34,23 @@ const Business = () => {
                 <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
                 Puedes elegir entre ser INVERSIONISTA O PROPIETARIO   
                 </p>
-                
-
-                <Button 
-                    styles={`mt-10`} 
-                    name="Inversionista" 
-                    bgColor="bg-blue-gradient"
-                    onClick={() => setToggle((prev) => !prev)} 
-                />
-
-                <Button 
-                    styles={`mt-10`}
-                    name="Propietario"
-                    bgColor="bg-yellow-gradient"
-                    onClick={() => setToggle((prev) => !prev)} 
-                />
+                <button type="button" className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10`} onClick={viewInvesment}>
+                    Inversionista
+                </button>
+                <button type="button" className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-yellow-gradient rounded-[10px] outline-none mt-10`} onClick={viewProperty}>
+                    Propietario
+                </button>
             </div>
 
             <div className={`${layout.sectionImg} flex-col`}>
 
             
 
-                {features_inv.map((feature, index) => (
+                {view === true ? features_inv.map((feature, index) => (
                     <FeatureCard key={features_inv.id} {...feature} index={index} />
+                )) : features_prop.map((feature, index) => (
+                    <FeatureCard key={features_prop.id} {...feature} index={index} />
                 ))}
-
-                    {/* { 
-                    {features_prop.map((feature, index) => (
-                        <FeatureCard key={features_prop.id} {...feature} index={index} />
-                    ))} } */}
                 
             </div>
         </section>
