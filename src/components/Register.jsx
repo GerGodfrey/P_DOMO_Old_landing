@@ -44,7 +44,7 @@ const Register = ({ showModal, setShowModal }) => {
                             </div>
                             {/*body*/}
                             <div className="p-6 flex-auto">
-                                <form className='flex-auto justify-center' onSubmit={submit} >
+                                <form className='flex-auto justify-center items-center' onSubmit={submit} >
                                     <div className={`${styles.flexCenter}`}>
                                         <label className={`p-6 text-white font-semibold ${styles.boxWidth}`} htmlFor="name">Nombre</label>
                                         <input className={`bg-black p-3 text-white
