@@ -18,6 +18,9 @@ const Register = ({ showModal, setShowModal }) => {
         }
         console.log(user);
         setShowModal(false)
+        setAge("")
+        setEmail("")
+        setName("")
     }
     return (
         <div>
