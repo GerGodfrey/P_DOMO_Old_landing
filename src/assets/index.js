@@ -21,6 +21,9 @@ import instagram from "./instagram.svg";
 import twitter from "./twitter.svg";
 import linkedin from "./linkedin.svg";
 import star_yellow from "./Star_yellow.svg";
+import shield_yellow from "./shield_yellow.svg";
+import send_yellow from "./send_yellow.svg"
+
 
 export {
     close,
@@ -45,5 +48,7 @@ export {
     twitter,
     linkedin,
     star_yellow,
+    shield_yellow,
+    send_yellow
     
 };

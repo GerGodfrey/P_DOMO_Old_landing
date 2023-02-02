@@ -1,6 +1,6 @@
 import { send, shield, star,
     card1, card2, card3, card4,
-    instagram, twitter, linkedin,star_yellow } from "../assets";
+    instagram, twitter, linkedin, star_yellow, shield_yellow, send_yellow } from "../assets";
 
 
 export const navLinks = [
@@ -84,14 +84,14 @@ export const features_prop = [
     },
     {
       id: "feature-3",
-      icon: shield,
+      icon: shield_yellow,
       title: "OFRECELO AL MERCADO",
       content:
         "Partiremos el valor del préstamo o tu inmueble en partes determinadas, las cuales, serán ofrecidas a millones de personas que buscan invertir en el mercado inmobiliario. ",
     },
     {
       id: "feature-4",
-      icon: send,
+      icon: send_yellow,
       title: "RECIBE TU DINERO ",
       content:
         "Una vez alcanzado el número de inversionistas necesario, formaliza la operación con nosotros y ¡recibe tu dinero! ",
