@@ -271,3 +271,7 @@
   letter-spacing: -0.02em;
   color: #F986B7;
 }
+
+.btn-register{
+  z-index: 49;
+}
