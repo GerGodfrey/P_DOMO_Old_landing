@@ -40,7 +40,7 @@ const Team = () => (
                 </span>
             </h1>
 
-            <div className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mb-6 `}>
+            <div className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mb-6  gap-5`}>
                 {team.map((feature, index) => (
                     <TeamCard key={team.id} {...feature} index={index} />
                 ))}
