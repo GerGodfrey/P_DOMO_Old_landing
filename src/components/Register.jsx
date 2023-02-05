@@ -1,24 +1,22 @@
 import React from 'react';
 import { useState } from 'react';
 import styles from '../style';
+import {firebaseConfig} from '../keys/firebase';
 
 
 const Register = ({ showModal, setShowModal }) => {
 
     const [name, setName] = useState("")
-    const [age, setAge] = useState("")
     const [email, setEmail] = useState("")
 
 
     const submit = () => {
         const user = {
             name,
-            age,
             email
         }
         console.log(user);
         setShowModal(false)
-        setAge("")
         setEmail("")
         setName("")
     }
@@ -49,11 +47,6 @@ const Register = ({ showModal, setShowModal }) => {
                                         <label className={`p-6 text-white font-semibold ${styles.boxWidth}`} htmlFor="name">Nombre</label>
                                         <input className={`bg-black p-3 text-white
                                         border-t border-b border-solid border-l border-r rounded-lg ${styles.boxWidth}`} type="text" id='name' value={name} onChange={e => setName(e.target.value)} placeholder="Nombre" />
-                                    </div>
-                                    <div className={`${styles.flexCenter}`}>
-                                        <label className={`p-6 text-white font-semibold ${styles.boxWidth}`} htmlFor="age">Edad</label>
-                                        <input className={`bg-black p-3 text-white
-                                        border-t border-b border-solid border-l border-r rounded-lg ${styles.boxWidth}`}  type="number" id='age' value={age} onChange={e => setAge(e.target.value)} placeholder="Edad" />
                                     </div>
                                     <div className={`${styles.flexCenter}`}>
                                         <label className={`p-6 text-white font-semibold ${styles.boxWidth}`} htmlFor="email">E-mail</label>
@@ -91,3 +84,9 @@ const Register = ({ showModal, setShowModal }) => {
 }
 
 export default Register;
+
+
+
+// Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
