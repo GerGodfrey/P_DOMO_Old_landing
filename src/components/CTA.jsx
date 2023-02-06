@@ -1,24 +1,35 @@
-import styles from "../style"
-import Button from "./Button"
-import React, { useState } from "react"
+import styles from "../style";
+import React, { useState } from "react";
+import {firebase} from "../keys/firebase";
+import { collection, addDoc } from "firebase/firestore"; 
+
 
 const CTA = () => {
 
     const [name, setName] = useState("")
-    const [age, setAge] = useState("")
     const [email, setEmail] = useState("")
 
 
-    const submit = () => {
-        const user = {
-            name,
-            age,
-            email
+    async function sendInfo() { 
+        const ref = collection(firebase, "registros");
+
+        try{
+            const docRef = await addDoc(ref, {
+                name : name,
+                email : email
+            });
+            console.log("Document written with ID: ", docRef.id);
+        } catch (e){
+            console.error("Error adding document: ", e);
         }
+    }
+
+    const submit = () => {
+        const user = {name,email}
         console.log(user);
-        setAge("")
         setEmail("")
         setName("")
+        sendInfo();
     }
 
     return (
