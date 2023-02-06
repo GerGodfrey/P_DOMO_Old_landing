@@ -1,25 +1,39 @@
 import React from 'react';
 import { useState } from 'react';
 import styles from '../style';
-import {firebaseConfig} from '../keys/firebase';
-
+import {firebase, app} from "../keys/firebase";
+import { collection, addDoc } from "firebase/firestore"; 
 
 const Register = ({ showModal, setShowModal }) => {
 
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
 
+    async function sendInfo() { 
+        const ref = collection(firebase, "registros");
+
+        try{
+            const docRef = await addDoc(ref, {
+                name : name,
+                email : email
+            });
+            console.log("Document written with ID: ", docRef.id);
+        } catch (e){
+            console.error("Error adding document: ", e);
+        }
+    }
 
     const submit = () => {
-        const user = {
-            name,
-            email
-        }
+        const user = {name,email}
+        
         console.log(user);
-        setShowModal(false)
-        setEmail("")
-        setName("")
+        setShowModal(false);
+        setEmail("");
+        setName("");
+        sendInfo();
+
     }
+    
     return (
         <div>
             {showModal ? (
@@ -27,19 +41,21 @@ const Register = ({ showModal, setShowModal }) => {
                 <div className='fixed z-50 inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center'>
                     <div className={`${styles.boxWidth} max-w-3xl px-10`}>
                         <div className='bg-black border-t border-b border-solid border-l border-r rounded-lg'>
+                            
                             <div className="flex items-start justify-between bg-transparent p-10 border-b border-solid border-slate-200 rounded-t">
                                 <h3 className="text-3xl font-semibold text-gradient">
                                     Registro
                                 </h3>
-                                <button
+                                {/* <button
                                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                                     onClick={() => setShowModal(false)}
                                 >
                                     <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                                         ×
                                     </span>
-                                </button>
+                                </button> */}
                             </div>
+
                             {/*body*/}
                             <div className="p-6 flex-auto">
                                 <form className='flex-auto justify-center items-center' onSubmit={submit} >
@@ -55,6 +71,7 @@ const Register = ({ showModal, setShowModal }) => {
                                     </div>
                                 </form>
                             </div>
+                            
                             {/*footer*/}
                             <div className={`flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b gap-4`}>
                                 <button
@@ -64,6 +81,7 @@ const Register = ({ showModal, setShowModal }) => {
                                 >
                                     Cerrar
                                 </button>
+                                
                                 <button
                                     className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-pink-500 rounded-[10px] outline-none mt-10 btn-register`}
                                     type="button"
@@ -72,6 +90,7 @@ const Register = ({ showModal, setShowModal }) => {
                                     Enviar
                                 </button>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -87,6 +106,3 @@ export default Register;
 
 
 
-// Initialize Firebase
-// const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
