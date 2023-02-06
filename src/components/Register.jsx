@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import styles from '../style';
-import {firebase, app} from "../keys/firebase";
+import {firebase} from "../keys/firebase";
 import { collection, addDoc } from "firebase/firestore"; 
 
 const Register = ({ showModal, setShowModal }) => {
