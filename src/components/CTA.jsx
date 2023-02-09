@@ -1,6 +1,6 @@
 import styles from "../style";
 import React, { useState } from "react";
-import {firebase} from "../keys/firebase";
+import {firebase} from "../connection/firebase";
 import { collection, addDoc } from "firebase/firestore"; 
 
 
