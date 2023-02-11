@@ -28,18 +28,19 @@ const Business = () => {
         <section id="funciones" className={layout.section}>
             <div className={layout.sectionInfo}>
                 <h2 className={styles.heading2}>
-                    Todo lo que puedes hacer con DOMO, <br className="sm:block hidden"/>
-                    Desde la palma de tu mano.
+                    Descrubre que hace DOMO por ti, <br className="sm:block hidden"/>
+                    desde la palma de tu mano.
                 </h2>
                 <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-                Puedes elegir entre ser INVERSIONISTA O PROPIETARIO   
+                Elige entre ser INVERSIONISTA O PROPIETARIO   
                 </p>
-                <button type="button" className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10`} onClick={viewInvesment}>
-                    Inversionista
-                </button>
                 <button type="button" className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-yellow-gradient rounded-[10px] outline-none mt-10`} onClick={viewProperty}>
                     Propietario
                 </button>
+                <button type="button" className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10`} onClick={viewInvesment}>
+                    Inversionista
+                </button>
+                
             </div>
 
             <div className={`${layout.sectionImg} flex-col`}>

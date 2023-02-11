@@ -18,21 +18,21 @@ const Hero = () => {
                 <div className="flex flex-row items-center py-[3px] px-4 bg-discount-gradient rounded-[10px] mb-2">
                     <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
                     <p className={`${styles.paragraph} ml-2`}>
-                        <span className='text-white'>100%</span> De descuento a los primeros {" "}
-                        <span className='text-white'>usuarios</span>
+                        <span className='text-white'>Registrarte</span> y obten{" "}
+                        <span className='text-white'>mejores beneficios</span>
                     </p>
                 </div>
 
                 <div className="flex flex-row justify-between items-center w-full">
                     <h1 className="flex-1 font-dmSans font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
                         <span className="text-gradient ">
-                            UTILIZA TUS CRIPTOMONEDAS <br className='sm:block hidden' /> {" "}
+                            Lo bueno, bonito y barato <br className='sm:block hidden' /> {" "}
                         </span>
-                        Y ACCEDE AL MERCADO INMOBILIARIO
+                        INVIERTE EN EL MERCADO INMOBILIARIO
                     </h1>
                 </div>
                 <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-                    Integramos nuevas características al mercado inmobiliario para beneficiar a inversionistas, propietarios y, sobre todo, familias.
+                    No te preocupes por los detalles del proceso inmobiliario. DOMO se encarga de todo, inicia con $3,500 MXN, relajate y espera tus ingresos mensuales.
                 </p>
 
 

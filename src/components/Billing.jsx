@@ -14,7 +14,7 @@ const Billing = () => (
 
     <div className={layout.sectionInfo}>
     <h2 className={styles.heading2}>
-        Conviértete en dueño de +1 inmueble <br className="sm:block hidden" /> y dale estabilidad a tu portafolio.
+        Sé dueño de +1 inmueble <br className="sm:block hidden" /> y dale estabilidad a tu cartera.
     </h2>
 
     <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
