@@ -275,3 +275,14 @@
 .btn-register{
   z-index: 49;
 }
+
+.trasit1{
+  visibility: hidden;
+  width: 0;
+}
+
+.trasit{
+  visibility: visible;
+  width: 100%;
+  transition: visibility 10s 
+}

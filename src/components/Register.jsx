@@ -8,7 +8,7 @@ const Register = ({ showModal, setShowModal }) => {
     const [name, setName] = useState("")
     const [age, setAge] = useState("")
     const [email, setEmail] = useState("")
-
+    const [registerChecked, setRegisterChecked] = useState(true)
 
     const submit = () => {
         const user = {
@@ -17,11 +17,17 @@ const Register = ({ showModal, setShowModal }) => {
             email
         }
         console.log(user);
-        setShowModal(false)
+        setRegisterChecked(false)
         setAge("")
         setEmail("")
         setName("")
     }
+
+    const closeModal = () => {
+        setShowModal(false)
+        setRegisterChecked(true)
+    }
+
     return (
         <div>
             {showModal ? (
@@ -44,7 +50,7 @@ const Register = ({ showModal, setShowModal }) => {
                             </div>
                             {/*body*/}
                             <div className="p-6 flex-auto">
-                                <form className='flex-auto justify-center items-center' onSubmit={submit} >
+                                {registerChecked ? <form className='flex-auto justify-center items-center' onSubmit={submit} >
                                     <div className={`${styles.flexCenter}`}>
                                         <label className={`p-6 text-white font-semibold ${styles.boxWidth}`} htmlFor="name">Nombre</label>
                                         <input className={`bg-black p-3 text-white
@@ -58,16 +64,21 @@ const Register = ({ showModal, setShowModal }) => {
                                     <div className={`${styles.flexCenter}`}>
                                         <label className={`p-6 text-white font-semibold ${styles.boxWidth}`} htmlFor="email">E-mail</label>
                                         <input className={`bg-black p-3 text-white
-                                        border-t border-b border-solid border-l border-r rounded-lg ${styles.boxWidth}`}  type="text" id='email' value={email} onChange={e => setEmail(e.target.value)} placeholder="ejemplo@correo.com"/>
+                                        border-t border-b border-solid border-l border-r rounded-lg ${styles.boxWidth}`}  type="email" id='email' value={email} onChange={e => setEmail(e.target.value)} placeholder="ejemplo@correo.com"/>
                                     </div>
-                                </form>
+                                </form> : <div className='flex justify-center items-center trasit trasit1'>
+                                    <h1 className=' text-white font-semibold'>
+                                        Gracias por tu interes, pronto recibiras información de nosotros.
+                                    </h1>
+                                </div>}
+                                
                             </div>
                             {/*footer*/}
                             <div className={`flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b gap-4`}>
                                 <button
                                     className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10`}
                                     type="button"
-                                    onClick={() => setShowModal(false)}
+                                    onClick={closeModal}
                                 >
                                     Cerrar
                                 </button>
