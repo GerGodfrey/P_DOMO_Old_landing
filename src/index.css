@@ -85,6 +85,20 @@
   text-fill-color: transparent;
 }
 
+.text-gradient2 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  background: radial-gradient(164.22% 6353.96% at 134.83% 15.18%, #079098 0%, #F5247D 56.46%, #f7eb08 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 .text-gradient-2 {
   font-family: 'DM Sans';
   font-style: normal;
@@ -284,5 +298,5 @@
 .trasit{
   visibility: visible;
   width: 100%;
-  transition: visibility 10s 
+  
 }
