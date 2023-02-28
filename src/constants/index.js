@@ -22,18 +22,18 @@ export const navLinks = [
 export const stats = [
     {
       id: "stats-1",
-      title: "Inmuebles",
-      value: "+3",
+      title: "Usuarios",
+      value: "35",
     },
     {
       id: "stats-2",
-      title: "Más rápido",
-      value: "2x",
+      title: "Inmueble",
+      value: "1",
     },
     {
       id: "stats-3",
-      title: "Inicia con",
-      value: "$1,000",
+      title: "Más rápido que lo tradicional",
+      value: "2x",
     },
 ];
 
@@ -43,7 +43,7 @@ export const features_inv = [
       icon: star,
       title: "ESCOGE PROYECTO ",
       content:
-        "Mediante compra te volverás propietario de una parte del inmueble y te beneficiarás de las rentas y plusvalías que genere.Mediante hipoteca otorgarás un crédito al propietario del inmueble, quien te reintegrará el monto total más un interés en un plazo determinado.",
+        "La compra te convierte en propietario y te da derecho a las rentas y plusvalías. Por otro lado, la hipoteca te permite prestar dinero al propietario a cambio de un interés y reembolso en un plazo determinado.",
     },{
       id: "feature-2",
       icon: star,
