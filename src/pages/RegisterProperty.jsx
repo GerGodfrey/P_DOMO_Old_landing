@@ -4,6 +4,8 @@ import { inputInfo } from '../constants';
 import { motion } from 'framer-motion';
 import { firebase } from "../connection/firebase";
 import { collection, addDoc } from "firebase/firestore";
+import Navbar2 from '../components/Navbar2';
+import styles from '../style';
 
 const RegisterProperty = () => {
 
@@ -32,6 +34,13 @@ const RegisterProperty = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: .1 }}>
+            <div className='bg-black w-full overflow-hidden'>
+                <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+                    <div className={`${styles.boxWidth}`}>
+                        <Navbar2 />
+                    </div>
+                </div>
+            </div>
             <h1 className='w-full flex justify-center text-6xl p-4 text-white'>
                 Registra un inmueble
             </h1>

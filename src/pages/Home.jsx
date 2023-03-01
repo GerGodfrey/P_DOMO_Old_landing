@@ -9,6 +9,13 @@ const Home = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: .1 }}>
+            <div className='bg-black w-full overflow-hidden'>
+                <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+                    <div className={`${styles.boxWidth}`}>
+                        <Navbar/>
+                    </div>
+                </div>
+            </div>
             <div className="bg-black w-full overflow-hidden">
                 <div className={`bg-black ${styles.flexStart}`}>
                     <div className={`${styles.boxWidth}`}>
@@ -20,7 +27,7 @@ const Home = () => {
                         <Stats />
                         <Business />
                         <Billing />
-                        <Team />
+                        <Team className='equipo' />
                         <CTA />
 
                         {/* 
