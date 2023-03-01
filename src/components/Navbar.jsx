@@ -2,7 +2,7 @@ import React from 'react'
 import { logo_color, close, menu } from '../assets';
 import { useState } from 'react';
 import { navLinks } from '../constants';
-import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 const Navbar = () => {
@@ -22,7 +22,14 @@ const Navbar = () => {
               } ${index === navLinks.length - 1 ? "mr-4" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <Link to={`${nav.id}`}>{nav.title}</Link>
+            <Link
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={100}
+              to={`${nav.id}`}>
+              {nav.title}
+            </Link>
 
           </li>
         ))}

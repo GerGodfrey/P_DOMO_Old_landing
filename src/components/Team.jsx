@@ -5,7 +5,7 @@ import {twitter_icon, link_icon,insta_icon} from "../assets";
 
 
 const TeamCard = ({ area, name, t_link, l_link, i_link,card }) => (
-    <div className='cards px-10 '>
+    <div className='cards px-10 equipo'>
         <img src={card} id="person" alt="star" className="w-[50%] h-[50%] object-contain" />
         <h1 className="font-poppins font-semibold text-pink2 text-[18px] leading-[23.4px] mb-1">
             {area}
