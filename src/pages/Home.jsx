@@ -29,14 +29,6 @@ const Home = () => {
                         <Billing />
                         <Team className='equipo' />
                         <CTA />
-
-                        {/* 
-    
-    <CardDeal />
-    <Testimonials />
-    <Clients />
-    
-     */}
                     </div>
                 </div>
 

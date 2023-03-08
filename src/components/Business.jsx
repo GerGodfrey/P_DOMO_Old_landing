@@ -21,7 +21,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 );
 
 const Business = () => {
-    const [view, setView] = useState(false);
+    const [view, setView] = useState(true);
     const viewInvesment = () => setView(true);
     const viewProperty = () => setView(false);
 
@@ -29,18 +29,19 @@ const Business = () => {
         <section id="funciones" className={layout.section}>
             <div className={layout.sectionInfo}>
                 <h2 className={styles.heading2}>
-                    Descrubre que hace DOMO por ti, <br className="sm:block hidden" />
+                    Descrubre lo que DOMO puede hace por ti, <br className="sm:block hidden" />
                     desde la palma de tu mano.
                 </h2>
                 <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-                    Elige entre ser INVERSIONISTA O PROPIETARIO
+                    Elige a que lado pertecenes: 
                 </p>
-                <button type="button" className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-yellow-gradient rounded-[10px] outline-none mt-10`} onClick={viewProperty}>
-                    Propietario
-                </button>
                 <button type="button" className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10`} onClick={viewInvesment}>
                     Inversionista
                 </button>
+                <button type="button" className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-yellow-gradient rounded-[10px] outline-none mt-10`} onClick={viewProperty}>
+                    Propietario
+                </button>
+                
 
             </div>
 

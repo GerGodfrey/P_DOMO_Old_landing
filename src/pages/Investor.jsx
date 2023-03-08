@@ -52,6 +52,9 @@ const Investor = () => {
             <p className='w-full flex justify-center text-1xl p-4 text-neutral-400 text-gradient2'>
                 Los campos obligatorios están marcados con un asterisco (*).
             </p>
+            <div>
+                
+            </div>
             <form onSubmit={handleSubmit(submit)}>
                 {inputInfo.map((input) => (
                     input.id != 'country' ?

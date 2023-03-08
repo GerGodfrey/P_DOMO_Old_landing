@@ -36,10 +36,10 @@ const CTA = () => {
         <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
             <div className="flex-1 flex flex-col">
                 <h2 className={styles.heading2}>
-                    Empieza a probar nuestros servicios
+                    Sé uno de los primeros en invertir con DOMO
                 </h2>
                 <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-                    Por ahora nos encontramos en una fase cerrada, solo para las primeras personas que se registren.
+                    Conoce el proyecto que tenemos exclusivamente para un grupo selecto de inversionistas.  
                 </p>
             </div>
 

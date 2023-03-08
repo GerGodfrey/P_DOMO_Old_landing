@@ -26,7 +26,7 @@ export const stats = [
   {
     id: "stats-1",
     title: "Usuarios",
-    value: "35",
+    value: "+35",
   },
   {
     id: "stats-2",
@@ -35,8 +35,8 @@ export const stats = [
   },
   {
     id: "stats-3",
-    title: "Más rápido que lo tradicional",
-    value: "2x",
+    title: "Mil MXN Activos",
+    value: "+400 ",
   },
 ];
 
@@ -44,29 +44,29 @@ export const features_inv = [
   {
     id: "feature-1",
     icon: star,
-    title: "ESCOGE PROYECTO ",
+    title: "ESCOGE INMUEBLE ",
     content:
-      "La compra te convierte en propietario y te da derecho a las rentas y plusvalías. Por otro lado, la hipoteca te permite prestar dinero al propietario a cambio de un interés y reembolso en un plazo determinado.",
+      "Revisa los distintos proyectos en los que puedes invertir, el número de partes en las que se dividió su valor, su duración, el rendimiento estimado a generar y las formas de pago aceptadas.",
   }, {
     id: "feature-2",
     icon: star,
-    title: "ESCOGE INMUEBLE ",
+    title: "REALIZA LA COMPRA",
     content:
-      "Revisa los distintos inmuebles en los que puedes invertir, la duración de los proyectos, el rendimiento a generar y las criptomonedas que podrás usar.",
+      "Deposita el monto correspondiente, a través de la forma de pago elegida, y acepta la compra del número de partes en las que quieras invertir.",
   },
   {
     id: "feature-3",
     icon: shield,
-    title: "REALIZAR LA COMPRA ",
+    title: "DISFRUTA DE UTILIDADES Y OTROS BENEFICIOS",
     content:
-      "Conecta tu cartera, verifica que tengas los activos suficientes y acepta la compra.",
+      "Por cada parte adquirida, obtendrás un Certificado de Propiedad Digital (CPD), el cual, será la llave para acceder a los rendimientos de tu inversión. ",
   },
   {
     id: "feature-4",
     icon: send,
-    title: "DISFRUTA DE UTILIDADES Y OTRAS VENTAJAS",
+    title: "VENTA DE CPD",
     content:
-      "Obtendrás un CPD, el cual, podrás quedártelo para recibir los beneficios del proyecto o venderlo en el mercado secundario.",
+      "En cualquier momento podrás vender tus CPD´s en el mercado secundario y liquidar tu inversión. ",
   },
 ];
 
@@ -77,27 +77,27 @@ export const features_prop = [
     icon: star_yellow,
     title: "DIGITALIZA EL INMUEBLE ",
     content:
-      "Sube la información solicitada para que podamos estudiarla, generar una valuación de tu inmueble y proporcionarte información del mercado. ",
+      "Sube la documentación solicitada para que nuestra inteligencia artificial la analice y te proporcione información del mercado.",
   }, {
     id: "feature-2",
     icon: star_yellow,
-    title: "ESCOGE UN ESQUEMA",
+    title: "EVALÚA NUESTRA PROPUESTA",
     content:
-      "Dinos qué es lo que quieres ¿obtener un préstamo por tu inmueble o prefieres ponerlo a la venta?",
+      "Revisa el monto y las condiciones de venta que DOMO tiene para tu inmueble.",
   },
   {
     id: "feature-3",
     icon: shield_yellow,
-    title: "OFRECELO AL MERCADO",
+    title: "PROCESO DE VENTA",
     content:
-      "Partiremos el valor del préstamo o tu inmueble en partes determinadas, las cuales, serán ofrecidas a millones de personas que buscan invertir en el mercado inmobiliario. ",
+      "DOMO parte el valor de tu propiedad y lo ofrecerá a millones de personas que buscan invertir en un activo inmobiliario.",
   },
   {
     id: "feature-4",
     icon: send_yellow,
     title: "RECIBE TU DINERO ",
     content:
-      "Una vez alcanzado el número de inversionistas necesario, formaliza la operación con nosotros y ¡recibe tu dinero! ",
+      "Una vez alcanzado el número de inversionistas necesario, formaliza la operación con nosotros y ¡recibe tu dinero en un solo pago! ",
   },
 ];
 
@@ -163,13 +163,12 @@ export const team = [
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Acerca de DOMO",
     links: [
 
       {
-        route: 'regprop',
-        name: "Registrar un inmueble",
-        link: "https://domopro.xyz/create/",
+        name: "Información General",
+        link: "https://domo-real-state.notion.site/Informaci-n-General-0cb7c714f9db44c3932b7c6d78f096e2",
       }
       /*  {
         name: "Contenido",
@@ -191,7 +190,7 @@ export const footerLinks = [
     ],
   },
   {
-    title: "Community",
+    title: "Explora",
     links: [
       {
         route: 'doubt',
@@ -218,16 +217,21 @@ export const footerLinks = [
     ],
   },
   {
-    title: "Partner",
+    title: "Alianzas",
     links: [
       {
+        route: 'regprop',
+        name: "Quiero vender un inmueble",
+        link: "https://domopro.xyz/create/",
+      },
+      {
         route: 'investor',
-        name: "Become a investor",
+        name: "Soy VC, Angel o similar",
         link: "https://domopro.xyz/become-a-investor/",
       },
       {
         route: 'partner',
-        name: "Become a Partner",
+        name: "Quiero ser aliado estratégico",
         link: "https://domopro.xyz/become-a-partner/",
       },
     ],

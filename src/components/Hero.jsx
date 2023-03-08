@@ -15,24 +15,28 @@ const Hero = () => {
             className={`flex md:flex-row flex-col ${styles.paddingY}`}
         >
             <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
-                <div className="flex flex-row items-center py-[3px] px-4 bg-discount-gradient rounded-[10px] mb-2">
+                {/* <div className="flex flex-row items-center py-[3px] px-4 bg-discount-gradient rounded-[10px] mb-2">
                     <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
                     <p className={`${styles.paragraph} ml-2`}>
-                        <span className='text-white'>Registrarte</span> y obten{" "}
-                        <span className='text-white'>mejores beneficios</span>
+                        <span className='text-white'>Regístrarte</span> y conoce{" "}
+                        <span className='text-white'>todos los beneficios</span>
                     </p>
-                </div>
+                </div> */}
 
                 <div className="flex flex-row justify-between items-center w-full">
                     <h1 className="flex-1 font-dmSans font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
                         <span className="text-gradient ">
-                            Bueno, bonito y barato <br className='sm:block hidden' /> {" "}
+                        Desde $3,500 MXN <br className='sm:block hidden' /> {" "}
                         </span>
-                        INVIERTE EN EL MERCADO INMOBILIARIO
+                        INVIERTE EN FRACCIONES INMOBILIARIAS
                     </h1>
                 </div>
                 <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-                    No te preocupes por los detalles del proceso inmobiliario. DOMO se encarga de todo, inicia con $3,500 MXN, relajate y espera tus ingresos mensuales.
+                    No más procesos largos. Relájate y recibe ingresos mensuales. ¡DOMO se encarga de todo! 
+                </p>
+
+                <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+                    
                 </p>
 
 

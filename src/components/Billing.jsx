@@ -13,13 +13,13 @@ const Billing = () => (
     </div>
 
     <div className={layout.sectionInfo}>
-    <h2 className={styles.heading2}>
-        Sé dueño de +1 inmueble <br className="sm:block hidden" /> y dale estabilidad a tu cartera.
+    <h2 className={styles.heading2}> 
+      Invierte desde $3,500 MXN  <br className="sm:block hidden" />  en diferentes inmuebles <br className="sm:block hidden" /> y genera rendimientos mensuales.
     </h2>
 
     <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Elige entre los mejores proyectos de inmuebles para ser dueño de màs de uno.
-      </p>
+      Navega entre los inmuebles que hemos seleccionado y diversifica tu inversión.
+    </p>
 
     </div>
   </section>
