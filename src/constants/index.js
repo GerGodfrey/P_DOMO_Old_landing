@@ -166,10 +166,10 @@ export const footerLinks = [
     title: "Acerca de DOMO",
     links: [
 
-      {
-        name: "Información General",
-        link: "https://domo-real-state.notion.site/Informaci-n-General-0cb7c714f9db44c3932b7c6d78f096e2",
-      }
+      // {
+      //   name: "Información General",
+      //   link: "https://domo-real-state.notion.site/Informaci-n-General-0cb7c714f9db44c3932b7c6d78f096e2",
+      // }
       /*  {
         name: "Contenido",
         link: "https://domopro.xyz/content/",
@@ -192,11 +192,11 @@ export const footerLinks = [
   {
     title: "Explora",
     links: [
-      {
-        route: 'doubt',
-        name: "Centro de dudas",
-        link: "https://domopro.xyz/help-center/",
-      }
+      // {
+      //   route: 'doubt',
+      //   name: "Centro de dudas",
+      //   link: "https://domopro.xyz/help-center/",
+      // }
       /*{
         name: "Partners",
         link: "https://domopro.xyz/partners/",
