@@ -14,8 +14,10 @@ const Billing = () => (
 
     <div className={layout.sectionInfo}>
     <h2 className={styles.heading2}> 
-      Invierte desde $3,500 MXN  <br className="sm:block hidden" />  en diferentes inmuebles <br className="sm:block hidden" /> y genera rendimientos mensuales.
+      Invierte en +1 inmueble,  <br className="sm:block hidden" />  genera rendimientos y dale estabilidad a tu cartera
     </h2>
+
+     
 
     <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
       Navega entre los inmuebles que hemos seleccionado y diversifica tu inversión.
