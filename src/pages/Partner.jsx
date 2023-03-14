@@ -44,7 +44,7 @@ const Partner = () => {
                 </div>
             </div>
             <div className='bg-discount-gradient flex flex-col justify-center items-center'>
-                <h1 className='w-full flex justify-center text-6xl p-4 text-white'>
+                <h1 className='w-full flex justify-center text-6xl p-4 text-white text-center'>
                     Sé parte de DOMO
                 </h1>
                 <p className='w-full text-2xl p-4 text-center text-neutral-400 text-gradient2'>
@@ -53,7 +53,7 @@ const Partner = () => {
                 <p className='w-full flex justify-center text-1xl p-4 text-neutral-400 text-gradient2'>
                     Los campos obligatorios están marcados con un asterisco (*).
                 </p>
-                <form onSubmit={handleSubmit(submit)}>
+                <form onSubmit={handleSubmit(submit)} className=' lg:w-[800px] md:w-[500px] sm:w-[300px]'>
                     {inputInfo.map((input) => (
                         input.id != 'country' ?
                             <li key={input.id}>
@@ -69,7 +69,7 @@ const Partner = () => {
                                         id={`${input.id}`}
                                         {...register(input.id)}
                                         placeholder={`${input.placeholder}`}
-                                        className='w-[600px] flex p-5 rounded-lg bg-white' />
+                                        className='w-full flex  p-5 rounded-lg bg-white' />
                                 </div>
                             </li> :
                             <li key={input.id}>
@@ -80,7 +80,7 @@ const Partner = () => {
                                         {input.name}
                                     </label>
                                     <select name="" id=""
-                                        className='w-[600px] flex p-5 rounded-lg bg-white'
+                                        className='w-full flex p-5 rounded-lg bg-white'
                                     >
                                         <option value=''>
                                             México

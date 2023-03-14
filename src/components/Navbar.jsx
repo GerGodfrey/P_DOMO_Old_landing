@@ -30,12 +30,10 @@ const Navbar = () => {
               to={`${nav.id}`}>
               {nav.title}
             </Link>
-
           </li>
         ))}
         <button className='btn-launch'>Launch App</button>
       </ul>
-
       <div className='sm:hidden flex flex-1 justify-end items-center'>
         <img
           src={toggle ? close : menu}
@@ -43,7 +41,6 @@ const Navbar = () => {
           className='w-[28px] h-[28px] object-contain'
           onClick={() => setToggle((prev) => !prev)}
         />
-
         <div
           className={`
             ${toggle ? 'flex' : 'hidden'}
@@ -65,13 +62,8 @@ const Navbar = () => {
             ))}
             <button className='btn-launch'>Launch App</button>
           </ul>
-
-
         </div>
-
-
       </div>
-
     </nav>
   );
 }
