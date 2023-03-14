@@ -27,6 +27,7 @@ const Investor = () => {
     const submit = (data) => {
         console.log(data);
         sendInfo(data);
+        
     }
 
     return (
@@ -43,7 +44,7 @@ const Investor = () => {
                     </div>
                 </div>
             </div>
-            <h1 className='w-full flex justify-center text-6xl p-4 text-white'>
+            <h1 className='w-full flex text-center justify-center text-6xl p-4 text-white'>
                 Invierte en DOMO
             </h1>
             <p className='w-full text-2xl p-4 text-center text-neutral-400 text-gradient2'>
@@ -55,12 +56,12 @@ const Investor = () => {
             <div>
                 
             </div>
-            <form onSubmit={handleSubmit(submit)}>
+            <form onSubmit={handleSubmit(submit)} className=' lg:w-[800px] md:w-[500px] sm:w-[300px]'>
                 {inputInfo.map((input) => (
                     input.id != 'country' ?
                         <li key={input.id}>
                             <div
-                                className='flex flex-col w-full items-center'>
+                                className='flex flex-col w-full'>
                                 <label
                                     htmlFor={`${input.name}`}
                                     className='w-full flex  text-white text-2xl p-4'>
@@ -71,18 +72,18 @@ const Investor = () => {
                                     id={`${input.id}`}
                                     {...register(input.id)}
                                     placeholder={`${input.placeholder}`}
-                                    className='w-[600px] flex p-5 rounded-lg bg-white' />
+                                    className='w-full flex  p-5 rounded-lg bg-white' />
                             </div>
                         </li> :
                         <li key={input.id}>
-                            <div className='flex flex-col w-full items-center'>
+                            <div className='inline-block w-full'>
                                 <label
                                     htmlFor={`${input.name}`}
                                     className='w-full flex  text-white text-2xl p-4'>
                                     {input.name}
                                 </label>
                                 <select name="" id=""
-                                    className='w-[600px] flex p-5 rounded-lg bg-white'
+                                    className='w-full flex p-5 rounded-lg bg-white'
                                 >
                                     <option value=''>
                                         México

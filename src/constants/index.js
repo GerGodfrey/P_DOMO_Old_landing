@@ -192,11 +192,11 @@ export const footerLinks = [
   {
     title: "Explora",
     links: [
-      // {
-      //   route: 'doubt',
-      //   name: "Centro de dudas",
-      //   link: "https://domopro.xyz/help-center/",
-      // }
+       {
+         route: 'doubt',
+         name: "Centro de dudas",
+         link: "https://domopro.xyz/help-center/",
+       }
       /*{
         name: "Partners",
         link: "https://domopro.xyz/partners/",
